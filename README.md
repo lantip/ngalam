@@ -8,4 +8,4 @@ Installation
 ----
 1. Clone repository ini.
 2. Buka file `index.html` pakai browser
-3. Masukkan kalimat dan tekan tombol "Ubah"
+3. Langsung kopi paste hasilnya ja.
