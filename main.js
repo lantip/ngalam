@@ -2,10 +2,7 @@ function reverseString(str) {
     var splitString = str.split("");
     var reverseArray = splitString.reverse();
     var joinArray = reverseArray.join("");
-    let lstr = joinArray.slice(-2);
-    if (lstr == "gn") {
-        joinArray = joinArray.slice(0, (joinArray.length - 2)) + "ng";
-    }
+    joinArray = joinArray.replace("gn", "ng").replace("gn", "ng");
     return joinArray;
 }
 
