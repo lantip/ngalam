@@ -1,0 +1,266 @@
+:root {
+  --dfBackgroundColor: rgba(67, 67, 67, 1);
+  --dfBackgroundSize: 11px;
+  --dfBackgroundImage: linear-gradient(to right, rgb(81, 79, 79) 1px, transparent 1px), linear-gradient(to bottom, rgb(97, 96, 96) 1px, transparent 1px);
+
+  --dfNodeType: flex;
+  --dfNodeTypeFloat: none;
+  --dfNodeBackgroundColor: rgba(101, 101, 101, 1);
+  --dfNodeTextColor: rgba(255, 253, 253, 1);
+  --dfNodeBorderSize: 1px;
+  --dfNodeBorderColor: rgba(85, 83, 83, 1);
+  --dfNodeBorderRadius: 7px;
+  --dfNodeMinHeight: 40px;
+  --dfNodeMinWidth: 300px;
+  --dfNodePaddingTop: 0px;
+  --dfNodePaddingBottom: 10px;
+  --dfNodeBoxShadowHL: 0px;
+  --dfNodeBoxShadowVL: 0px;
+  --dfNodeBoxShadowBR: 6px;
+  --dfNodeBoxShadowS: 0px;
+  --dfNodeBoxShadowColor: rgba(59, 58, 58, 1);
+
+  --dfNodeHoverBackgroundColor: rgba(94, 92, 92, 1);
+  --dfNodeHoverTextColor: rgba(176, 174, 174, 1);
+  --dfNodeHoverBorderSize: 1px;
+  --dfNodeHoverBorderColor: #000000;
+  --dfNodeHoverBorderRadius: 7px;
+
+  --dfNodeHoverBoxShadowHL: 0px;
+  --dfNodeHoverBoxShadowVL: 0px;
+  --dfNodeHoverBoxShadowBR: 0px;
+  --dfNodeHoverBoxShadowS: 0px;
+  --dfNodeHoverBoxShadowColor: rgba(200, 200, 200, 1);
+
+  --dfNodeSelectedBackgroundColor: rgba(91, 88, 88, 1);
+  --dfNodeSelectedTextColor: #ffffff;
+  --dfNodeSelectedBorderSize: 1px;
+  --dfNodeSelectedBorderColor: #000000;
+  --dfNodeSelectedBorderRadius: 7px;
+
+  --dfNodeSelectedBoxShadowHL: 0px;
+  --dfNodeSelectedBoxShadowVL: 0px;
+  --dfNodeSelectedBoxShadowBR: 0px;
+  --dfNodeSelectedBoxShadowS: 0px;
+  --dfNodeSelectedBoxShadowColor: rgba(67, 65, 65, 1);
+
+  --dfInputBackgroundColor: rgba(139, 139, 139, 1);
+  --dfInputBorderSize: 1px;
+  --dfInputBorderColor: #000000;
+  --dfInputBorderRadius: 50px;
+  --dfInputLeft: -10px;
+  --dfInputHeight: 25px;
+  --dfInputWidth: 6px;
+
+  --dfInputHoverBackgroundColor: #ffffff;
+  --dfInputHoverBorderSize: 2px;
+  --dfInputHoverBorderColor: #000000;
+  --dfInputHoverBorderRadius: 50px;
+
+  --dfOutputBackgroundColor: rgba(167, 167, 167, 1);
+  --dfOutputBorderSize: 2px;
+  --dfOutputBorderColor: #000000;
+  --dfOutputBorderRadius: 50px;
+  --dfOutputRight: 5px;
+  --dfOutputHeight: 25px;
+  --dfOutputWidth: 6px;
+
+  --dfOutputHoverBackgroundColor: #ffffff;
+  --dfOutputHoverBorderSize: 2px;
+  --dfOutputHoverBorderColor: #000000;
+  --dfOutputHoverBorderRadius: 45px;
+
+  --dfLineWidth: 2px;
+  --dfLineColor: rgba(197, 197, 197, 1);
+  --dfLineHoverColor: rgba(113, 113, 113, 1);
+  --dfLineSelectedColor: rgba(255, 255, 255, 1);
+
+  --dfRerouteBorderWidth: 2px;
+  --dfRerouteBorderColor: #000000;
+  --dfRerouteBackgroundColor: rgba(142, 142, 142, 1);
+
+  --dfRerouteHoverBorderWidth: 2px;
+  --dfRerouteHoverBorderColor: #000000;
+  --dfRerouteHoverBackgroundColor: #ffffff;
+
+  --dfDeleteDisplay: block;
+  --dfDeleteColor: #ffffff;
+  --dfDeleteBackgroundColor: #000000;
+  --dfDeleteBorderSize: 1px;
+  --dfDeleteBorderColor: #ffffff;
+  --dfDeleteBorderRadius: 50px;
+  --dfDeleteTop: -24px;
+
+  --dfDeleteHoverColor: #000000;
+  --dfDeleteHoverBackgroundColor: #ffffff;
+  --dfDeleteHoverBorderSize: 2px;
+  --dfDeleteHoverBorderColor: #000000;
+  --dfDeleteHoverBorderRadius: 50px;
+
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  border: 0;
+  outline: 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: none;
+}
+
+[placeholder]::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+[placeholder]:hover::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+[placeholder]:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+[placeholder]::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+[placeholder]:hover::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+[placeholder]:focus::-moz-placeholder {
+  color: transparent;
+}
+
+[placeholder]:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+[placeholder]:hover:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+[placeholder]:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+form {
+  width: 400px;
+  margin: 50px auto;
+}
+
+input[type=text], select {
+  display: block;
+  width: 98%;
+  margin: 20px 0 0px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.25);
+}
+
+textarea {
+  display: block;
+  width: 98%;
+  height: 150px;
+  margin: 20px 0 0px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.radio {
+  position: relative;
+  display: inline-block;
+  margin: 0 20px 20px 0;
+}
+
+.radio input[type=radio] {
+  vertical-align: middle;
+  opacity: 0;
+}
+
+.radio label {
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.radio input[type=radio] + label:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: -3px 5px 0 -15px;
+  vertical-align: middle;
+  font-size: 14px;
+  font-family: fontawesome;
+  line-height: 19px;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.radio input[type=radio] + label:before {
+  border-radius: 50%;
+}
+
+.radio input[type=radio]:hover + label:before {
+  content: "";
+  font-size: 9px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.radio input[type=radio]:checked + label:before {
+  content: "";
+  font-size: 9px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.radio .sex {
+  font: 20px fontawesome;
+}
+
+input[type=submit] {
+  display: block;
+  width: 150px;
+  margin: 0 0 20px;
+  padding: 8px 0 10px 0;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.drawflow .connection .main-path {
+  stroke-dasharray: 5;
+  animation: dashdraw .5s linear infinite;
+}
+@keyframes dashdraw {
+0% {
+    stroke-dashoffset: 10
+  }
+}
+
+.modal-content {
+  max-width: 400px;
+  background-color: #333;
+  color: #fff;
+}
+
+#preview {
+    margin: 20px;
+}
